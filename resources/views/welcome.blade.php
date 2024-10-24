@@ -17,6 +17,16 @@
             padding: 10px;
             margin: 10px;
         }
+
+        #ribanc2{
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #dropdown a:hover{
+            transition-duration:0.5ms;
+            text-decoration:underline;
+        }
     </style>
 </head>
 <body>
@@ -26,7 +36,7 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-2">
+                    <div class="col-3">
                         <h1 id="ribanc">Webmaker</h1>
                     </div>
                 <div class="col-7"></div>
@@ -44,7 +54,7 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Oldalak</a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu" id="dropdown">
                                     <li>
                                         <a href="#4" class="dropdown-item"> Első oldal</a>
                                     </li>
@@ -63,6 +73,7 @@
         </div>
     </nav>
 
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
