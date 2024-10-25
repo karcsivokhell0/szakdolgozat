@@ -34,8 +34,12 @@
 </nav>
 
 <br><br><br><br>
-<p>
-    <h1>Hello Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae aperiam, quis magni illo quibusdam ratione necessitatibus, ipsum dolorem corporis inventore error, maiores eligendi nobis officia odit culpa impedit? Molestias, cumque!</h1>
-</p>
+<div class="container-fluid bg-info-subtle">
+    <div class="container">
+        <div class="row">
+            <h1 style="text-align:center;">Websites for everyone</h1>
+        </div>
+    </div>
+</div>
 </body>
 </html>
