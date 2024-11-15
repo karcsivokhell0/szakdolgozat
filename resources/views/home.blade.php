@@ -34,10 +34,12 @@
   </div>
 </nav>
 
+<h1>Cigány</h1>
+
 <br><br><br><br>
 <div class="container-fluid">
   <div class="container">
-    <h1 class="col-3 cigany">Website for everyone</h1>
+    <h1 class="col-3">Website for everyone</h1>
 
   </div>
 </div>
