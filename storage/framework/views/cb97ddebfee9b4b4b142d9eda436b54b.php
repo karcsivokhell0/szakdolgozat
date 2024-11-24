@@ -108,7 +108,7 @@ section #header{
     font-weight: 600;
 }
     </style>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <?php echo app('Illuminate\Foundation\Vite')(['resources/css/app.css', 'resources/js/app.js']); ?>
 </head>
 <body>
 
@@ -159,4 +159,4 @@ section #header{
         </div>
     </header>
 </body>
-</html>
+</html><?php /**PATH /var/www/resources/views/home.blade.php ENDPATH**/ ?>

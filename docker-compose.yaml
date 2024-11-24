@@ -32,3 +32,23 @@ services:
       - 3308:3306
     volumes:
       - ./volumes/mysql:/var/lib/mysql
+
+  fe-install:
+    container_name: szakdoga-fe-install
+    hostname: szakdoga-fe-install
+    image: node:20
+    working_dir: /var/www
+    command: npm i
+    volumes:
+      - .:/var/www
+
+  frontend:
+    container_name: szakdoga-frontend
+    hostname: szakdoga-frontend
+    image: node:20
+    working_dir: /var/www
+    command: npm run dev -- --host
+    ports:
+      - 5173:5173
+    volumes:
+      - .:/var/www
