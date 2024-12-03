@@ -47,21 +47,21 @@
 
 <br><br><br><br>
 <header class="container">
-        <div id="content">
-            <span id="blur"></span>
-            <span id="blur"></span>
+  <div id="content">
+    <span id="blur"></span>
+    <span id="blur"></span>
             
-            <H1>Create <span>YOUR</span> site like a pro</H1>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus rem eos aliquid quo rerum
-                temporibus ipsum distinctio numquam ut omnis placeat, nam sint atque quos dolorem laborum? Rerum, esse
-                dolorem.
-            </p>
-            <button id="btn">Get Started</button>
-        </div>
-        <div id="image">
-            <img src="https://mytechdecisions.com/wp-content/uploads/2019/10/AdobeStock_256229414.jpg">
-        </div>
-    </header>
+    <H1>Create <span>YOUR</span> site like a pro</H1>
+    <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus rem eos aliquid quo rerum
+    temporibus ipsum distinctio numquam ut omnis placeat, nam sint atque quos dolorem laborum? Rerum, esse
+    dolorem.
+    </p>
+    <button id="btn">Get Started</button>
+  </div>
+  <div id="image">
+    <img src="https://mytechdecisions.com/wp-content/uploads/2019/10/AdobeStock_256229414.jpg">
+  </div>
+</header>
 </body>
 </html>
