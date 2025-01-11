@@ -15,8 +15,8 @@
 <body>
 
 
-<nav style="background-color: #dddddd;" class="navbar navbar-expand-lg bg-body-tertiary">
-  <div id="navbar" class="container-fluid">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid navbar">
     <h2><a class="navbar-brand fs-4" href="#">WebMaker</a></h2>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle na0gation">
       <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About us</a>
@@ -44,21 +44,64 @@
 
 <br><br><br><br>
 <header class="container">
-  <div id="content">
+  <div class="content">
     <span id="blur"></span>
     <span id="blur"></span>
             
-    <H1>Create <span>YOUR</span> site like a pro</H1>
+    <H1>Create <span>YOUR</span> website like a pro</H1>
     <p>
     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus rem eos aliquid quo rerum
     temporibus ipsum distinctio numquam ut omnis placeat, nam sint atque quos dolorem laborum? Rerum, esse
     dolorem.
     </p>
-    <button id="btn">Get Started</button>
+    <button class="btn">Get Started</button>
   </div>
-  <div id="image">
+  <div class="image">
     <img src="https://mytechdecisions.com/wp-content/uploads/2019/10/AdobeStock_256229414.jpg">
   </div>
 </header>
+
+<div class="info">
+  <div class="container">
+
+    <div class="row">
+      <h1>What we offer?</h1>
+    </div>
+
+    <div class="row">
+  
+      <div class="col-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
