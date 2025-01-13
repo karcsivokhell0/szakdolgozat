@@ -15,7 +15,7 @@
 <body>
 
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg">
   <div class="container-fluid navbar">
     <h2><a class="navbar-brand fs-4" href="#">WebMaker</a></h2>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle na0gation">
@@ -68,34 +68,34 @@
       <h1>What we offer?</h1>
     </div>
 
-    <div class="row">
+    <div class="row" id="cards">
   
-      <div class="col-4">
-        <div class="card" style="width: 18rem;">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card" id="card">
           <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">User friendly website</h5>
+            <p class="card-text">We made our website user friendly so they can make their website easily</p>
+            <a href="#" class="btn">About ourselves</a>
           </div>
         </div>
       </div>
 
-      <div class="col-4">
-        <div class="card" style="width: 18rem;">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card" id="center">
           <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Easy access to everyone</h5>
+            <p class="card-text">Everyone can reach our website and can make a website for themself</p>
+            <button class="btn btn-secondary" ><a href="#">Go somewhere</a></button>
           </div>
         </div>
       </div>
 
-      <div class="col-4">
-        <div class="card" style="width: 18rem;">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card" id="card">
           <div class="card-body">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="#" class="btn">Go somewhere</a>
           </div>
         </div>
       </div>
