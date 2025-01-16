@@ -15,7 +15,7 @@ body{
   }
   
  header .btn:hover{
-      background-color: #1e40af;
+      background-color: #7408f8;
   }
   
   .container{
@@ -129,7 +129,7 @@ body{
     color: white;
 }
 #card .btn:hover{
-    background-color: #7d12ff;
+    background-color: #7408f8;
     transition-duration: 0.5ms;
 }
 

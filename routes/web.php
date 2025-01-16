@@ -5,4 +5,4 @@ use App\Http\Controllers\BaseController;
 
 
 Route::get('/home', [BaseController::class, "home"]);
-Route::get('/test', [BaseController::class, "tet"]);
+Route::get('/about', [BaseController::class, "about"]);

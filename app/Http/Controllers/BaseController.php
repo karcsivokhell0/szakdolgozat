@@ -11,8 +11,8 @@ class BaseController extends Controller
     {
         return view("home");
     }
-    public function test()
+    public function about()
     {
-        return view("home");
+        return view("about");
     }
 }
