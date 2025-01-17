@@ -15,25 +15,25 @@
 <body>
 
 
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-dark navbar-expand-lg ">
   <div class="container-fluid navbar">
-    <h2><a class="navbar-brand fs-4" href="#">WebMaker</a></h2>
+    <h2><a class="navbar-brand text-white fs-4" href="home">WebMaker</a></h2>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle na0gation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="">Home</a>
+          <a class="nav-link active text-white text-decoration-underline" aria-current="page" href="home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about">About us</a>
+          <a class="nav-link text-white" href="about">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Templates</a>
+          <a class="nav-link text-white" href="#">Templates</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact details</a>
+          <a class="nav-link text-white" href="#">Contact details</a>
         </li>
       </ul>
     </div>
@@ -62,7 +62,7 @@
 </header>
 
 <div class="info">
-  <div class="container">
+  <div class="container asd">
 
     <div class="row">
       <h1>What we offer?</h1>
