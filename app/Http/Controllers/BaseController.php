@@ -15,4 +15,12 @@ class BaseController extends Controller
     {
         return view("about");
     }
+    public function templates()
+    {
+        return view("templates");
+    }
+    public function login()
+    {
+        return view("login");
+    }
 }

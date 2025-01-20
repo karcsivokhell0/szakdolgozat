@@ -17,23 +17,23 @@
 
 <nav class="navbar navbar-dark navbar-expand-lg ">
   <div class="container-fluid navbar">
-    <h2><a class="navbar-brand text-white fs-4" href="home">WebMaker</a></h2>
+    <h2><a class="navbar-brand  fs-4" href="home">WebMaker</a></h2>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle na0gation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link active text-white text-decoration-underline" aria-current="page" href="home">Home</a>
+          <a class="nav-link active  text-decoration-underline" aria-current="page" href="home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="about">About us</a>
+          <a class="nav-link " href="about">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Templates</a>
+          <a class="nav-link" href="templates">Templates</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Contact details</a>
+          <a class="nav-link" href="login">Login</a>
         </li>
       </ul>
     </div>
@@ -102,6 +102,19 @@
     </div>
   </div>
 </div>
+
+
+<footer class="py-3 my-4">
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+  </ul>
+  <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+</footer>
+
 
 </body>
 </html>
