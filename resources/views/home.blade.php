@@ -21,7 +21,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle na0gation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse" >
       <ul class="navbar-nav justify-content-end">
         <li class="nav-item">
           <a class="nav-link active  text-decoration-underline" aria-current="page" href="home">Home</a>
