@@ -8,14 +8,15 @@ body{
       padding: 1rem 2rem;
       font-size: 1rem;
       color: black;
-      background-color: #FFE710;
+      background-color: #DC32FF;
       border-radius: 5px;
       cursor: pointer;
       transition: all 0.3s ease;
   }
   
  header .btn:hover{
-      background-color: #E5CC10;
+      background-color: #bd2bda;
+      color: #fff;
   }
   
   .container{
@@ -53,7 +54,7 @@ body{
   
   header .content h1 span{
       -webkit-text-fill-color: transparent;
-      -webkit-text-stroke: 1px #FFE710;
+      -webkit-text-stroke: 1px #DC32FF;
   }
   
   header .content p{
@@ -95,9 +96,15 @@ body{
   }
 
 
+.info{
+    margin-bottom: 2rem;
+    padding: 10px;
+}
+
 .info h1{
     text-align: center;
     padding: 25px;
+    
     
 }
 
@@ -129,7 +136,8 @@ body{
     color: black;
 }
 #card .btn:hover{
-    background-color: #E5CC10;
+    color: #fff;
+    background-color: #bd2bda;
     transition-duration: 0.5ms;
 }
 
@@ -158,6 +166,5 @@ nav li a:hover{
     text-decoration: underline;
     transition-duration: 0.5ms;
 }
-
 
 

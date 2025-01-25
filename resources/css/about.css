@@ -1,0 +1,30 @@
+nav{
+    background-color: #D42EF2;
+    color: #fff;
+    
+    
+}
+nav h2{
+    padding: 5px;
+    padding-left: 10px;
+    color: white;
+}
+nav li{
+    padding: 3px;
+    color: white;
+}
+nav li a:hover{
+    text-decoration: underline;
+    transition-duration: 0.5ms;
+}
+
+.about h1{
+    text-align: center;
+    justify-content: center;
+}
+
+.about p{
+    text-align: center  ;
+    padding: 10px;
+    justify-content: center;
+}
