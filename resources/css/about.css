@@ -19,12 +19,53 @@ nav li a:hover{
 }
 
 .about h1{
+    padding: 10px;
     text-align: center;
     justify-content: center;
 }
 
 .about p{
+    font-size: 20px;
     text-align: center  ;
     padding: 10px;
     justify-content: center;
+}
+
+#cards{
+    justify-content: center;
+}
+
+.card{
+    text-align: center;
+    padding: 15px;
+}
+
+#center{
+    background-color: #DC32FF;
+}
+
+#center a{
+    color: white;
+    text-decoration: none;
+}
+
+#center a:hover{
+    text-decoration: wavy;
+    transition-duration: 0.5ms;
+}
+
+#card .btn{
+    background-color: #DC32FF;
+    color: black;
+}
+#card .btn:hover{
+    color: #fff;
+    background-color: #bd2bda;
+    transition-duration: 0.5ms;
+}
+
+#card{
+    background-color: #686868
+    ;
+    color: white;
 }
