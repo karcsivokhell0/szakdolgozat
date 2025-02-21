@@ -61,17 +61,17 @@
 
     <div class="col-lg-4 col-md-4 col-sm-12">
       <div class="card" id="center">
-        <img class="card-img-top"src="/images/wooper.jpeg">
+        <img class="card-img-top"src="{{url('/images/wooper.jpeg')}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Zólyomi Károly</h5>
-          <p class="card-text">Everyone can reach our website and can make a website for themself</p>
+          <p class="card-text">Project manager</p>
         </div>
       </div>
     </div>
 
     <div class="col-lg-4 col-md-4 col-sm-12">
       <div class="card" id="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
+        <img class="card-img-top" src="/images/wooper.jpeg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Sali Levente</h5>
           <p class="card-text">Technical manager</p>
