@@ -1,0 +1,42 @@
+nav{
+    background-color: #D42EF2;
+    color: #fff;
+    
+    
+}
+nav h2{
+    padding: 5px;
+    padding-left: 10px;
+    color: white;
+}
+nav li{
+    padding: 3px;
+    color: white;
+}
+nav li a:hover{
+    text-decoration: underline;
+    transition-duration: 0.5ms;
+}
+.login{
+    width: 500px;
+    margin: 15px;
+    background-color: #D42EF2;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-right: 10;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.login input{
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+}
+
+
+.login h1{
+    padding: 10px;
+    margin: 10px;
+}

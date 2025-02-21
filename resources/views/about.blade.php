@@ -41,6 +41,8 @@
   </div>
 </nav>
 
+<br><br><br><br>
+
 <div class="container about">
   <h1>About WebMaker</h1><br>
   <p>WebMaker is a free to use web aplication, that allow the users that they can create their own websites easily and rapidly <br>We made our website user friendly so the users can navigate themself in our site more easily</p>
@@ -61,7 +63,7 @@
 
     <div class="col-lg-4 col-md-4 col-sm-12">
       <div class="card" id="center">
-        <img class="card-img-top"src="{{url('/images/wooper.jpeg')}}" alt="Card image cap">
+        <img class="card-img-top"src="{{url('/images/tablokep_ZK.jpg')}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Zólyomi Károly</h5>
           <p class="card-text">Project manager</p>
