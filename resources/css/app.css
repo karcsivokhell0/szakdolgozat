@@ -8,14 +8,14 @@ body{
       padding: 1rem 2rem;
       font-size: 1rem;
       color: black;
-      background-color: #DC32FF;
+      background-color: #6885EF;
       border-radius: 5px;
       cursor: pointer;
       transition: all 0.3s ease;
   }
   
  header .btn:hover{
-      background-color: #bd2bda;
+      background-color: #476AEC;
       color: #fff;
   }
   
@@ -37,12 +37,7 @@ body{
       transition: initial;
   }
   
-  header .content h4{
-      margin-bottom: 1rem;
-      color: #ccc;
-      font-size: 1rem;
-      font-weight: 600;
-  }
+
   
   header .content h1{
       color: black;
@@ -54,7 +49,7 @@ body{
   
   header .content h1 span{
       -webkit-text-fill-color: transparent;
-      -webkit-text-stroke: 1px #DC32FF;
+      -webkit-text-stroke: 1.5px #6885EF;
   }
   
   header .content p{
@@ -75,7 +70,6 @@ body{
       font-size: 38rem;
       font-weight: 400;
       line-height: 20rem;
-      color: #1d4ed8;
       opacity: 0.2;
       z-index: -100;
   }
@@ -87,13 +81,7 @@ body{
       padding-left: 10px;
   }
   
-  section .header{
-      margin-bottom: 1rem;
-      color: #fff;
-      text-align: center;
-      font-size: 2.25rem;
-      font-weight: 600;
-  }
+
 
 
 .info{
@@ -118,7 +106,7 @@ body{
 }
 
 #center{
-    background-color: #DC32FF;
+    background-color: #6885EF;
 }
 
 #center a{
@@ -132,12 +120,12 @@ body{
 }
 
 #card .btn{
-    background-color: #DC32FF;
+    background-color: #6885EF;
     color: black;
 }
 #card .btn:hover{
     color: #fff;
-    background-color: #bd2bda;
+    background-color: #476AEC;
     transition-duration: 0.5ms;
 }
 
@@ -148,7 +136,7 @@ body{
 }
 
 nav{
-    background-color: #D42EF2;
+    background-color: #6885EF;
     color: #fff;
     
     

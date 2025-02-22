@@ -42,7 +42,7 @@ nav li a:hover{
 }
 
 #center{
-    background-color: #DC32FF;
+    background-color: #6885EF;
 }
 
 #center a{
@@ -55,19 +55,10 @@ nav li a:hover{
     transition-duration: 0.5ms;
 }
 
-#card .btn{
-    background-color: #DC32FF;
-    color: black;
-}
-#card .btn:hover{
-    color: #fff;
-    background-color: #bd2bda;
-    transition-duration: 0.5ms;
-}
+
 
 #card{
-    background-color: #686868
-    ;
+    background-color: #686868;
     color: white;
 }
 

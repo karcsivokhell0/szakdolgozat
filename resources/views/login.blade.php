@@ -27,13 +27,13 @@
           <a class="nav-link" aria-current="page" href="home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  text-decoration-unerline active" href="about">About us</a>
+          <a class="nav-link  text-decoration-unerline" href="about">About us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="templates">Templates</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="login">Login</a>
+          <a class="nav-link active" href="login">Login</a>
         </li>
       </ul>
     </div>

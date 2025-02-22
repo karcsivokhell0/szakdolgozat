@@ -41,11 +41,11 @@
   </div>
 </nav>
 
-<br><br><br><br>
+<br><br>
 
 <div class="container about">
   <h1>About WebMaker</h1><br>
-  <p>WebMaker is a free to use web aplication, that allow the users that they can create their own websites easily and rapidly <br>We made our website user friendly so the users can navigate themself in our site more easily</p>
+  <p>WebMaker is a free to use web aplication, that allow the clients that they can create their own websites easily and rapidly <br>We made our website client friendly so the clients can navigate themself in our site more easily</p>
 </div>
 
 <div class="container workers">
@@ -84,7 +84,7 @@
 </div>
 </div>
 </div>
-
+<br><br>
 
 
 

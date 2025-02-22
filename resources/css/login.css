@@ -1,5 +1,5 @@
 nav{
-    background-color: #D42EF2;
+    background-color: #6885EF;
     color: #fff;
     
     
@@ -20,7 +20,7 @@ nav li a:hover{
 .login{
     width: 500px;
     margin: 15px;
-    background-color: #D42EF2;
+    background-color: #6885EF;
     font-size: 20px;
     padding-top: 10px;
     padding-right: 10;
@@ -39,4 +39,6 @@ nav li a:hover{
 .login h1{
     padding: 10px;
     margin: 10px;
+    -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px black;
 }
