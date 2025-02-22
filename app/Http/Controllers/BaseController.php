@@ -23,4 +23,9 @@ class BaseController extends Controller
     {
         return view("login");
     }
+
+    public function UserProfile()
+    {
+        return view("UserProfile");
+    }
 }

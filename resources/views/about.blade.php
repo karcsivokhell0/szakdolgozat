@@ -73,7 +73,7 @@
 
     <div class="col-lg-4 col-md-4 col-sm-12">
       <div class="card" id="card">
-        <img class="card-img-top" src="/images/wooper.jpeg" alt="Card image cap">
+        <img class="card-img-top" src="{{url('/images/asd.png')}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Sali Levente</h5>
           <p class="card-text">Technical manager</p>
