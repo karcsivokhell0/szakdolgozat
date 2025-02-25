@@ -44,20 +44,23 @@
 
 <br><br><br><br>
 <header class="container">
-  <div class="content">
-    <span id="blur"></span>
-    <span id="blur"></span>
-            
-    <H1>Create <span>YOUR</span> website like a pro</H1>
-    <p>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus rem eos aliquid quo rerum
-    temporibus ipsum distinctio numquam ut omnis placeat, nam sint atque quos dolorem laborum? Rerum, esse
-    dolorem.
-    </p>
-    <button class="btn">Get Started</button>
-  </div>
-  <div class="image">
-    <img src="https://mytechdecisions.com/wp-content/uploads/2019/10/AdobeStock_256229414.jpg">
+  <div class="container">
+    <div class="row dsa">
+      <div class="content col-3">
+        <span id="blur"></span>
+        <span id="blur"></span>
+                
+        <H1>Create <span>YOUR</span> website like a pro</H1>
+        <p>
+          Welcome to WebMaker ! Ready to create a stunning website in minutes? Choose a template, customize it with ease, and launch your dream site like a pro—no coding required!
+        </p>
+        <button class="btn">Get Started</button>
+      </div>
+      <div class="col-3"></div>
+      <div class="image col-3">
+        <img src="https://mytechdecisions.com/wp-content/uploads/2019/10/AdobeStock_256229414.jpg">
+      </div>
+    </div>
   </div>
 </header>
 
@@ -65,7 +68,7 @@
   <div class="container asd">
 
     <div class="row">
-      <h1>What we offer?</h1>
+      <h1>What do we offer?</h1>
     </div>
 
     <div class="row" id="cards">

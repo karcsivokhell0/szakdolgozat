@@ -43,7 +43,7 @@
 <br><br><br><br>
 
 
-<form class="container-fluid">
+<form class="container-fluid" action="login" method="POST">
   <div class="container login">
     <h1>Login</h1>
     <div class="form-group">
@@ -61,13 +61,8 @@
 
       <input type="password" placeholder="Password" required>
     </div>
-    <div class="row">
-      <div class="from-group">
-        <button class="btn btn-secondary">Login</button>
-      </div>
-      <div class="from-group">
-        <button class="btn btn-secondary" href="register">register</button>
-      </div>
+    <div class="from-group">
+      <button class="btn btn-secondary">register</button>
     </div>
   </div>
 </form>

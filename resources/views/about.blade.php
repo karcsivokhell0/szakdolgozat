@@ -53,7 +53,7 @@
   <div class="row" id="cards">
     <div class="col-lg-4 col-md-4 col-sm-12">
       <div class="card" id="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
+        <img class="card-img-top" src="{{url('/images/tablokep_GG.jpg')}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Galavics Gergő Balázs</h5>
           <p class="card-text">Administrative manager</p>

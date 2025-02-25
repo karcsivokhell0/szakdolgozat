@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class BaseController extends Controller
@@ -24,8 +25,14 @@ class BaseController extends Controller
         return view("login");
     }
 
-    public function UserProfile()
+    public function register()
     {
-        return view("UserProfile");
+        return view("register");
     }
+    
+    public function registering(Request $request, User $user){
+        $user =$request->all();
+        
+    }
+
 }

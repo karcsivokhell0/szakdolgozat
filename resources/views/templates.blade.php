@@ -17,7 +17,7 @@
 
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid navbar">
-    <h2><a class="navbar-brand text-white fs-4" href="#">WebMaker</a></h2>
+    <h2><a class="navbar-brand text-white fs-4" href="home">WebMaker</a></h2>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle na0gation">
       <span class="navbar-toggler-icon"></span>
     </button>
