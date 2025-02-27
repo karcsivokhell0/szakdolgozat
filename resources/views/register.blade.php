@@ -43,7 +43,8 @@
 <br><br><br><br>
 
 
-<form class="container-fluid" action="login" method="POST">
+<form class="container-fluid" action="{{ route('store') }}" method="post">
+  {{ @csrf_field() }}
   <div class="container login">
     <h1>Login</h1>
     <div class="form-group">

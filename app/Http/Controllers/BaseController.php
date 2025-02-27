@@ -20,19 +20,8 @@ class BaseController extends Controller
     {
         return view("templates");
     }
-    public function login()
-    {
-        return view("login");
-    }
-
-    public function register()
-    {
-        return view("register");
-    }
     
-    public function registering(Request $request, User $user){
-        $user =$request->all();
-        
-    }
+    
+    
 
 }

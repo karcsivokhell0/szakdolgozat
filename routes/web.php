@@ -2,15 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BaseController;
+use App\Http\Controllers\UserController;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Container\Attributes\Auth;
 
 Route::get('/home', [BaseController::class, "home"]);
 Route::get('/about', [BaseController::class, "about"]);
 
-Route::get('/login', [BaseController::class, "login"]);
-
-Route::get('/register',[BaseController::class,"register"]);
 
 Route::group([
     "prefix"=>"templates",
@@ -18,4 +16,10 @@ Route::group([
 ], function(){
     Route::get("/", "templates");
 }
-)->middleware('auth');
+)->middleware(Auth::class);
+
+Route::controller(UserController::class)->group(function(){
+    Route::post('/store', 'store')->name('store');
+    Route::get('/login', "login");
+    Route::get('/register',"register");
+});

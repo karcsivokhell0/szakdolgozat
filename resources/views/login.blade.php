@@ -43,7 +43,7 @@
 <br><br><br><br>
 
 
-<form class="container-fluid">
+<form class="container-fluid" >
   <div class="container login">
     <h1>Login</h1>
     <div class="form-group">
@@ -65,10 +65,10 @@
       <div class="from-group">
         <button class="btn btn-secondary">Login</button>
       </div>
-      <div class="from-group">
-        <button class="btn btn-secondary" href="register">register</button>
-      </div>
     </div>
+  </div>
+  <div class="from-group">
+    <button class="btn btn-secondary" href="register">register</button>
   </div>
 </form>
 <br><br><br><br>
