@@ -4,16 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use GuzzleHttp\Middleware;
-use Illuminate\Container\Attributes\Auth;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth as FacadesAuth;
+
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
     public function login()
     {
+
         return view("login");
     }
 
@@ -22,31 +23,27 @@ class UserController extends Controller
         return view("register");
     }
 
-    public static function middleware(): array
-    {
-        return [
-            new Middleware('auth', except: ['home', 'login']),
-            
-        ];
-    }
 
-    public function store(Request $request):RedirectResponse{
+
+    public function store(Request $request) {
         $request->validate([
+            'username' => 'required|string|max:250',
             'name' => 'required|string|max:250',
-            'email' => 'required|string|email:rfc,dns|max:250|unique:users,email',
+            'email' => 'required|string|email',
             'password' => 'required|string|min:8'
         ]);
-
+    
         $user = User::create([
+            'username'=>$request->username,
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password)
         ]);
-        $credentials = $request->only('email', 'password');
-        FacadesAuth::attempt($credentials);
-        $request->session()->regenerate();
-        return redirect()->route("login")
-            ->withSuccess('You have successfully registered & logged in!');
+        
+        
+        
+        return redirect()->route("login");
+
     }
     public function authenticate(Request $request): RedirectResponse
     {

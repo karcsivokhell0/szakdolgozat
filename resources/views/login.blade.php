@@ -43,8 +43,8 @@
 <br><br><br><br>
 
 
-<form class="container-fluid" >
-  <div class="container login">
+<div class="container-fluid">
+  <form class="container login">
     <h1>Login</h1>
     <div class="form-group">
       <input class="form-controll" type="text" placeholder="Name" required>
@@ -66,11 +66,17 @@
         <button class="btn btn-secondary">Login</button>
       </div>
     </div>
+  </form>
+  <div class="container registering">
+    <div class="row">
+      <div class="from-group">
+        <h3>You don't have a profile? </h3>
+        <button class="btn btn-secondary" href="register">register</button>
+      </div>
+    </div>
   </div>
-  <div class="from-group">
-    <button class="btn btn-secondary" href="register">register</button>
-  </div>
-</form>
+</div>
+
 <br><br><br><br>
 
 <footer class="py-3">

@@ -43,3 +43,7 @@ nav li a:hover{
       -webkit-text-stroke: 1px black;
 }
 
+.registering{
+    display: inline;
+    text-align: center;
+}

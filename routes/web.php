@@ -18,8 +18,10 @@ Route::group([
 }
 )->middleware(Auth::class);
 
-Route::controller(UserController::class)->group(function(){
+Route::group([
+    "controller" => UserController::class
+], function(){
     Route::post('/store', 'store')->name('store');
-    Route::get('/login', "login");
+    Route::get('/login', "login")->name("login");
     Route::get('/register',"register");
 });

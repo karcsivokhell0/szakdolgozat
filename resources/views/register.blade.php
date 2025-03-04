@@ -46,24 +46,24 @@
 <form class="container-fluid" action="{{ route('store') }}" method="post">
   {{ @csrf_field() }}
   <div class="container login">
-    <h1>Login</h1>
+    <h1>Register</h1>
     <div class="form-group">
-      <input class="form-controll" type="text" placeholder="Name" required>
+      <input class="form-controll" type="text" name="name" placeholder="Name" required>
     </div>
     <div class="form-group">
 
-      <input type="text" placeholder="Username" required>
+      <input type="text" placeholder="Username" name="username" required>
     </div>
     <div class="form-group">
 
-      <input type="email" placeholder="Email" required>
+      <input type="email" placeholder="Email" name="email" required>
     </div>
     <div class="form-group">
 
-      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Password" name="password" required>
     </div>
     <div class="from-group">
-      <button class="btn btn-secondary">register</button>
+      <button  class="btn btn-secondary">register</button>
     </div>
   </div>
 </form>
