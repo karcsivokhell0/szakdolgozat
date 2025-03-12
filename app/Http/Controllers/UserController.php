@@ -47,21 +47,10 @@ class UserController extends Controller
     }
     public function authenticate(Request $request): RedirectResponse
     {
-        $credentials = $request->validate([
-            'email' => 'required|email',
-            'password' => 'required'
-        ]);
-
-        if(Auth($credentials))
-        {
-            $request->session()->regenerate();
-            return redirect()->route('home');
-        }
-
-        return back()->withErrors([
-            'email' => 'Your provided credentials do not match in our records.',
-        ])->onlyInput('email');
-
+        $credentials = $request->only('username','name','email', 'password');
+        Auth::attempt($credentials);
+        $request->session()->regenerate();
+        return redirect()->route('templates')
+            ->withSuccess('You have successfully logged in!');
     }
-
 }

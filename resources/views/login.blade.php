@@ -43,8 +43,9 @@
 <br><br><br><br>
 
 
-<div class="container-fluid">
-  <form class="container login">
+<div class="container-fluid justify-content-center">
+  <form class="container login" method="POST" action="{{ route('authenticate') }}">
+    {{ @csrf_field() }}
     <h1>Login</h1>
     <div class="form-group">
       <input class="form-controll" type="text" placeholder="Name" required>
@@ -67,11 +68,12 @@
       </div>
     </div>
   </form>
+
   <div class="container registering">
     <div class="row">
       <div class="from-group">
         <h3>You don't have a profile? </h3>
-        <button class="btn btn-secondary" href="register">register</button>
+        <a class="btn btn-primary" href="register">register</a>
       </div>
     </div>
   </div>

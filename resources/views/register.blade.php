@@ -63,7 +63,7 @@
       <input type="password" placeholder="Password" name="password" required>
     </div>
     <div class="from-group">
-      <button  class="btn btn-secondary">register</button>
+      <button type="submit" class="btn btn-secondary">register</button>
     </div>
   </div>
 </form>

@@ -7,7 +7,7 @@
     
  
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     <title>WebMaker | Home</title>
     
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -15,54 +15,58 @@
 <body>
 
 
-<nav class="navbar navbar-dark navbar-expand-lg ">
-  <div class="container-fluid navbar">
-    <h2><a class="navbar-brand  fs-4" href="home">WebMaker</a></h2>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle na0gation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" >
-      <ul class="navbar-nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active  text-decoration-underline" aria-current="page" href="home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="about">About us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="templates">Templates</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="login">Login</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid navbar">
+      <h2><a class="navbar-brand  fs-4" href="#">WebMaker</a></h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle na0gation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-decoration-unerline" href="about">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="templates">Templates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login">Login</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 
 
 <br><br><br><br>
-<header class="container">
+<header class="container-fluid main">
   <div class="container">
-    <div class="row dsa">
-      <div class="content col-3">
-        <span id="blur"></span>
-        <span id="blur"></span>
-                
-        <H1>Create <span>YOUR</span> website like a pro</H1>
-        <p>
-          Welcome to WebMaker ! Ready to create a stunning website in minutes? Choose a template, customize it with ease, and launch your dream site like a pro—no coding required!
-        </p>
-        <button class="btn">Get Started</button>
-      </div>
-      <div class="col-3"></div>
-      <div class="image col-3">
-        <img src="https://mytechdecisions.com/wp-content/uploads/2019/10/AdobeStock_256229414.jpg">
-      </div>
+    <div class="row">
+      <h1 class="text-center">Welcome To The WebMaker!</h1>
     </div>
   </div>
 </header>
+
+<br><br>
+
+<div class="container-fluid inform">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6x asd">
+        <h1>Create <span>YOUR</span> webslite like a <span>PRO</span></h1>
+        <p>Ready to create a stunning website in minutes? Choose a template, customize it with ease, and launch your dream site like a pro—no coding required!</p>
+        <button class="btn btn-primary">Get Started</button>
+      </div>
+      <div class="col-lg-6  col-md-6 image">
+        <img class="rounded " src="https://www.digitalsilk.com/wp-content/uploads/2020/05/website-planning-hero-image.png">
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="info">
   <div class="container asd">
@@ -115,6 +119,6 @@
   <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
 </footer>
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

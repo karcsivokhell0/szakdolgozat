@@ -17,28 +17,44 @@
 
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid navbar">
-    <h2><a class="navbar-brand text-white fs-4" href="home">WebMaker</a></h2>
+    <h2><a class="navbar-brand fs-4" href="home">WebMaker</a></h2>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle na0gation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link text-white" aria-current="page" href="home">Home</a>
+          <a class="nav-link" aria-current="page" href="home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white text-decoration-unerline active" href="about">About us</a>
+          <a class="nav-link text-decoration-unerline " href="about">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="templates">Templates</a>
+          <a class="nav-link active" href="templates">Templates</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="login">Login</a>
+          <a class="nav-link" href="login">Login</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+
+@if (Auth::check())
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <p class="sad">You aren't signed in into your account</p>
+    </div>
+    <div class="col-lg-6">
+      <p></p>
+      <a href="login" class="btn btn-secondary">Go to Login</a>
+    </div>
+  </div>
+</div>
+@else
+    
+@endif
 
 </body>
 </html>
