@@ -67,6 +67,16 @@
     </div>
   </div>
 </form>
+<div class="container existingaccount">
+    <div class="row">
+      <div class="from-group">
+        <h3>Already have an account?</h3>
+        <a class="btn btn-primary" href="login?">Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <br><br><br><br>
 
 <footer class="py-3">
