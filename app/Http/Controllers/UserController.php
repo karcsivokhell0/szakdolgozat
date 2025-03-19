@@ -14,7 +14,6 @@ class UserController extends Controller
 {
     public function login()
     {
-
         return view("login");
     }
 
@@ -58,6 +57,8 @@ class UserController extends Controller
         return redirect()->route("login");
 
     }
+
+
     public function authenticate(Request $request): RedirectResponse
     {
         $credentials = $request->only('username','name','email', 'password');

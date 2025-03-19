@@ -48,19 +48,19 @@
     {{ @csrf_field() }}
     <h1>Login</h1>
     <div class="form-group">
-      <input class="form-controll" type="text" placeholder="Name" required>
+      <input class="form-controll" type="text" name="name" placeholder="Name" required>
     </div>
     <div class="form-group">
 
-      <input type="text" placeholder="Username" required>
+      <input type="text" name="username" placeholder="Username" required>
     </div>
     <div class="form-group">
 
-      <input type="email" placeholder="Email" required>
+      <input type="email" name="email" placeholder="Email" required>
     </div>
     <div class="form-group">
 
-      <input type="password" placeholder="Password" required>
+      <input type="password" name="password" placeholder="Password" required>
     </div>
     <div class="row">
       <div class="from-group">
