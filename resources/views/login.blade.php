@@ -72,7 +72,7 @@
   <div class="container registering">
     <div class="row">
       <div class="from-group">
-        <h3>You don't have a profile? </h3>
+        <h3>Don't have an account?</h3>
         <a class="btn btn-primary" href="register">register</a>
       </div>
     </div>
