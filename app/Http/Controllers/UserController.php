@@ -23,6 +23,19 @@ class UserController extends Controller
         return view("register");
     }
 
+    public function home()
+    {
+        return view("home");
+    }
+    public function about()
+    {
+        return view("about");
+    }
+    public function templates()
+    {
+        return view("templates");
+    }
+
 
 
     public function store(Request $request) {

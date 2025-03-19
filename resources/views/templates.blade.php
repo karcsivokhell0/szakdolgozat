@@ -39,22 +39,5 @@
     </div>
   </div>
 </nav>
-
-@if (Auth::check())
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6">
-      <p class="sad">You aren't signed in into your account</p>
-    </div>
-    <div class="col-lg-6">
-      <p></p>
-      <a href="login" class="btn btn-secondary">Go to Login</a>
-    </div>
-  </div>
-</div>
-@else
-    
-@endif
-
 </body>
 </html>
