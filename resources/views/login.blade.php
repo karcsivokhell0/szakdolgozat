@@ -81,7 +81,7 @@
 
 <br><br><br><br>
 
-<footer class="py-3">
+<footer class="">
   <ul class="nav justify-content-center">
     <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
     <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
