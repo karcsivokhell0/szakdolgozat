@@ -18,7 +18,7 @@ Route::group([
     Route::get('/login', "login")->name("login");
     Route::post('/authenticate', 'authenticate')->name('authenticate');
     Route::get('/register',"register")->name('register');
-    Route::get('/home', [BaseController::class, "home"])->name('home');
-    Route::get('/about', [BaseController::class, "about"])->name('about');
+    Route::get('/home',  "home")->name('home');
+    Route::get('/about',  "about")->name('about');
     Route::get("/templates", "templates")->name('templates');
 });

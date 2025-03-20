@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>WebMaker | Login</title>
     
-    @vite(['resources/css/login.css', 'resources/js/app.js'])
+    @vite(['resources/css/register.css', 'resources/js/app.js'])
 </head>
 <body>
 
@@ -43,35 +43,37 @@
 <br><br><br><br>
 
 
-<form class="container-fluid" action="{{ route('store') }}" method="post">
-  {{ @csrf_field() }}
-  <div class="container login">
+<div class="container-fluid justify-content-center ">
+  <form class="container register" method="POST" action="{{ route('store') }}">
+    {{ @csrf_field() }}
     <h1>Register</h1>
     <div class="form-group">
       <input class="form-controll" type="text" name="name" placeholder="Name" required>
     </div>
     <div class="form-group">
 
-      <input type="text" placeholder="Username" name="username" required>
+      <input type="text" name="username" placeholder="Username" required>
     </div>
     <div class="form-group">
 
-      <input type="email" placeholder="Email" name="email" required>
+      <input type="email" name="email" placeholder="Email" required>
     </div>
     <div class="form-group">
 
-      <input type="password" placeholder="Password" name="password" required>
+      <input type="password" name="password" placeholder="Password" required>
     </div>
-    <div class="from-group">
-      <button type="submit" class="btn btn-secondary">register</button>
+    <div class="row">
+      <div class="from-group">
+        <button class="btn btn-secondary">Register</button>
+      </div>
     </div>
-  </div>
-</form>
-<div class="container existingaccount">
+  </form>
+
+  <div class="container existingaccount">
     <div class="row">
       <div class="from-group">
         <h3>Already have an account?</h3>
-        <a class="btn btn-primary" href="login?">Login</a>
+        <a class="btn btn-primary" href="register">Login</a>
       </div>
     </div>
   </div>
@@ -80,7 +82,7 @@
 <br><br><br><br>
 
 <footer class="py-3">
-  <ul class="nav justify-content-center pb-3 mb-3">
+  <ul class="nav justify-content-center">
     <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
     <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
     <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>

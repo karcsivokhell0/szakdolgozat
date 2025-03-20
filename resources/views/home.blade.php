@@ -76,7 +76,7 @@
     </div>
 
     <div class="row" id="cards">
-      <div class="col-lg-4 col-md-4 col-sm-12">
+      <div class="col-lg-4 col-md-4 col-sm-8">
         <div class="card" id="card">
           <div class="card-body">
             <h5 class="card-title">User friendly website</h5>
@@ -86,7 +86,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-4 col-sm-12">
+      <div class="col-lg-4 col-md-4 col-sm-8">
         <div class="card" id="center">
           <div class="card-body">
             <h5 class="card-title">Easy access to everyone</h5>
@@ -96,7 +96,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-4 col-sm-12">
+      <div class="col-lg-4 col-md-4 col-sm-8">
         <div class="card" id="card">
           <div class="card-body">
             <h5 class="card-title">Free to use</h5>
@@ -108,6 +108,9 @@
     </div>
   </div>
 </div>
+<br>
+<br>
+<br>
 
 
 <footer class="py-3">
