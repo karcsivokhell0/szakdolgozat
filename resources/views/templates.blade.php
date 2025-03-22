@@ -39,5 +39,19 @@
     </div>
   </div>
 </nav>
+
+
+@auth
+        <p>Welcome back, {{ Auth::user()->name }}!</p>
+        <p>You are logged in.</p>
+        <form method="POST" action="{{ route('logout') }}">
+          @csrf
+          <button type="submit">Logout</button>
+      </form>
+    @endauth
+
+    @guest
+        <p>You are not logged in. <a href="{{ route('login') }}">Login</a></p>
+    @endguest
 </body>
 </html>

@@ -5,11 +5,7 @@ use App\Http\Controllers\BaseController;
 use App\Http\Controllers\UserController;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Container\Attributes\Auth;
-
-
-
-
-
+use Illuminate\Support\Facades\Auth as FacadesAuth;
 
 Route::group([
     "controller" => UserController::class
@@ -21,4 +17,8 @@ Route::group([
     Route::get('/home',  "home")->name('home');
     Route::get('/about',  "about")->name('about');
     Route::get("/templates", "templates")->name('templates');
+    Route::post('/logout', function () {
+        FacadesAuth::logout();  // Logs out the user
+        return redirect('/home');  // Redirects to the homepage or login page
+    })->name('logout');
 });
