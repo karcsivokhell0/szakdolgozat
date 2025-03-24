@@ -17,7 +17,7 @@ Route::group([
     Route::get('/register',"register")->name('register');
     Route::get('/home',  "home")->name('home');
     Route::get('/about',  "about")->name('about');
-
+    Route::get("/templates", "templates")->name('templates');
     Route::post('/logout', function () {
         FacadesAuth::logout();  
         return redirect('/home');  
@@ -28,7 +28,7 @@ Route::group([
 Route::group([
     "controller"=>TemplateController::class
 ],function(){
-    Route::get("/templates", "templates")->name('templates');
+   
     Route::get("/templatesForm", "templatesForm")->name('templatesForm');
     Route::post("/generate", "generate")->name('generate');
 });

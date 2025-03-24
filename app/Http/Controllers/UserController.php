@@ -77,7 +77,7 @@ class UserController extends Controller
             ->withSuccess('You have successfully logged in!');
     }
 
-    public function generate(Request $request){
+    /*public function generate(Request $request){
 
         $user = Auth::user();
 
@@ -119,5 +119,5 @@ class UserController extends Controller
         session(['generatedd_files' => $generatedFiles]);
 
         return redirect()->route('templates')->with('success','You made your html file succesly');
-    }
+    }*/
 }

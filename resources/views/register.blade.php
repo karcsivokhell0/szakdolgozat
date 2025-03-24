@@ -48,7 +48,7 @@
     {{ @csrf_field() }}
     <h1>Register</h1>
     <div class="form-group">
-      <input class="form-control" type="text" name="name" placeholder="Name" required>
+      <input class="form-controll" type="text" name="name" placeholder="Name" required>
     </div>
     <div class="form-group">
 
