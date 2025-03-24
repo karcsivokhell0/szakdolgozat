@@ -73,7 +73,7 @@
     <div class="row">
       <div class="from-group">
         <h3>Don't have an account?</h3>
-        <a class="btn btn-primary" href="register">register</a>
+        <a class="btn btn-primary" href="register">Register</a>
       </div>
     </div>
   </div>
