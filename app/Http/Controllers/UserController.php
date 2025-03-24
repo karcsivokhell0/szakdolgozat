@@ -38,7 +38,7 @@ class UserController extends Controller
     }
 
     public function templatesForm(){
-        
+        return view("templatesForm");
     }
 
 
@@ -82,9 +82,9 @@ class UserController extends Controller
         $user = Auth::user();
 
         $validate = $request->validate([
-            'htitle'=>'required|string|max:255',
-            'btitle'=>'required|string|max255',
-            'description'=>'required|string|max:1000',
+            'htitle'=>'required|string|max:25',
+            'btitle'=>'required|string|max:25',
+            'description'=>'required|string|max:150',
             'bg_color'=>'required|string|size:7'
         ]);
 
@@ -108,11 +108,10 @@ class UserController extends Controller
             </html>
         ";
 
-        $filename=Auth::user()->username .'html';
+        $filename="website".'html';
 
-        Storage::disk('Documents')->put($filename, $htmlContent);
+        Storage::disk('local')->put($filename, $htmlContent);
 
-        $user->filegenerate->sodium_increment;
 
 
         $generatedFiles = session('generated_files',[]);
