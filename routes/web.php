@@ -18,7 +18,7 @@ Route::group([
     Route::get('/about',  "about")->name('about');
     Route::get("/templates", "templates")->name('templates');
     Route::post('/logout', function () {
-        FacadesAuth::logout();  // Logs out the user
-        return redirect('/home');  // Redirects to the homepage or login page
+        FacadesAuth::logout();  
+        return redirect('/home');  
     })->name('logout');
 });

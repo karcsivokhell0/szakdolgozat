@@ -42,12 +42,27 @@
 
 
 @auth
-        <p>Welcome back, {{ Auth::user()->name }}!</p>
-        <p>You are logged in.</p>
+        <p>Welcome {{ Auth::user()->name }}!</p>
+        <p>You are succesfully logged in.</p>
         <form method="POST" action="{{ route('logout') }}">
           @csrf
           <button type="submit">Logout</button>
-      </form>
+      </form><br>
+      <h2>Previously Generated HTML Files</h2>
+        @if(count($generatedFiles) > 0)
+            <ul>
+                @foreach($generatedFiles as $file)
+                    <li>
+                        <a href="{{ storage_path('app/users/' . Auth::id() . '/' . $file) }}" download>{{ $file }}</a>
+                    </li>
+                @endforeach
+            </ul>
+            <a href="templatesForm" class="btn tbn-primary">Make another website</a>
+        @else
+            <p>No files generated yet.</p>
+            <a href="templatesForm" class="btn tbn-primary">Make your first website</a>
+        @endif
+        <p>You have generated {{ Auth::user()->files_generated }} file(s).</p>
     @endauth
 
     @guest
