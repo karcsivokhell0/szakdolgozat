@@ -8,7 +8,7 @@
  
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <title>WebMaker | Login</title>
+    <title>WebMaker |TemplateForm</title>
     
     @vite(['resources/css/register.css', 'resources/js/app.js'])
 </head>
@@ -43,40 +43,54 @@
 <br><br><br><br>
 
 
-<div class="container-fluid justify-content-center ">
-  <form class="container register" method="POST" action="{{ route('generate') }}">
-    {{ @csrf_field() }}
-    <h1>Register</h1>
-    <div class="form-group">
-      <input class="form-controll" type="text" name="htitle" placeholder="Header Title" required>
-    </div>
-    <div class="form-group">
-      <input type="text" name="btitle" placeholder="Body Title" required>
-    </div>
-    <div class="form-group">
+<div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">Generate Your website</div>
 
-      <input type="text" name="description" placeholder="Description" required>
-    </div>
-    <div class="form-group">
+                    <div class="card-body">
+                        @if(session('success'))
+                            <div class="alert alert-success">
+                                {{ session('success') }}
+                                @if(session('download_link'))
+                                    <br>
+                                    <a href="{{ session('download_link') }}" class="btn btn-primary mt-2" download>
+                                        Download your website
+                                    </a>
+                                @endif
+                            </div>
+                        @endif
 
-      <input type="text" name="bg_color" placeholder="Background color" required>
-    </div>
-    <div class="row">
-      <div class="from-group">
-        <button class="btn btn-secondary">Create the Website</button>
-      </div>
-    </div>
-  </form>
+                        <form method="POST" action="generate">
+                            @csrf()
 
-  <div class="container existingaccount">
-    <div class="row">
-      <div class="from-group">
-        <h3>Already have an account?</h3>
-        <a class="btn btn-primary" href="register">Login</a>
-      </div>
+                            <div class="mb-3">
+                                <label for="title" class="form-label">HeaderTitle</label>
+                                <input type="text" class="form-control" id="HeaderTitle" name="HeaderTitle" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="title" class="form-label">BodyTitle</label>
+                                <input type="text" class="form-control" id="BodyTitle" name="BodyTitle" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="content" class="form-label">Description</label>
+                                <textarea class="form-control" id="description" name="description" rows="5" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="author" class="form-label">Background Color</label>
+                                <input type="text" class="form-control" id="bgColor" name="bgColor">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Generate Website</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+
+
 
 <br><br><br><br>
 

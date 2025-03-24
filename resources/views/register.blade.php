@@ -48,7 +48,7 @@
     {{ @csrf_field() }}
     <h1>Register</h1>
     <div class="form-group">
-      <input class="form-controll" type="text" name="name" placeholder="Name" required>
+      <input class="form-control" type="text" name="name" placeholder="Name" required>
     </div>
     <div class="form-group">
 
@@ -73,7 +73,7 @@
     <div class="row">
       <div class="from-group">
         <h3>Already have an account?</h3>
-        <a class="btn btn-primary" href="register">Login</a>
+        <a class="btn btn-primary" href="login">Login</a>
       </div>
     </div>
   </div>
