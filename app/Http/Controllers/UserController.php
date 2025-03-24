@@ -61,7 +61,10 @@ class UserController extends Controller
 
     public function authenticate(Request $request): RedirectResponse
     {
-        $credentials = $request->only('username','name','email', 'password');
+        $credentials = $request->validate([
+            'email' => ['required', 'email'],
+            'password' => ['required'],
+        ]);
         Auth::attempt($credentials);
         $request->session()->regenerate();
         return redirect()->route('templates')
