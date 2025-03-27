@@ -60,7 +60,7 @@
     </div>
     <div class="form-group">
 
-      <input type="password" name="password" placeholder="Password" required>
+      <input type="password" name="password" placeholder="Password" required title="8 characters minimum">
     </div>
     <div class="row">
       <div class="from-group">

@@ -57,7 +57,7 @@
         <div class="card-body">
           <h5 class="card-title">Galavics Gergő Balázs</h5>
           <p class="card-text">Administrative manager</p>
-          <p class="card-text">(majd valami kreatív szöveget ide ki kell találni magadról)</p>
+          <p class="card-text">19 years old, responsible for Documentation.</p>
         </div>
       </div>
     </div>
@@ -68,7 +68,7 @@
         <div class="card-body">
           <h5 class="card-title">Zólyomi Károly</h5>
           <p class="card-text">Project manager</p>
-          <p class="card-text">(majd valami kreatív szöveget ide ki kell találni magadról)</p>
+          <p class="card-text">19 years old, responsible for Front-end and Back-end.</p>
         </div>
       </div>
     </div>
@@ -79,7 +79,7 @@
         <div class="card-body">
           <h5 class="card-title">Sali Levente</h5>
           <p class="card-text">Technical manager</p>
-          <p class="card-text">(majd valami kreatív szöveget ide ki kell találni magadról)</p>
+          <p class="card-text">19 years old, responsible for Database.</p>
         </div>
       </div>
     </div>

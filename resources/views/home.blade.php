@@ -81,7 +81,7 @@
           <div class="card-body">
             <h5 class="card-title">User friendly website</h5>
             <p class="card-text">We made our website user friendly so they can make their website easily</p>
-            <a href="#" class="btn">About ourselves</a>
+            <a href="about" class="btn">About Us</a>
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@
           <div class="card-body">
             <h5 class="card-title">Easy access to everyone</h5>
             <p class="card-text">Everyone can reach our website and can make a website for themself</p>
-            <button class="btn btn-secondary" ><a href="#">Go somewhere</a></button>
+            <button class="btn btn-secondary" ><a href="templates">Templates</a></button>
           </div>
         </div>
       </div>
@@ -101,7 +101,7 @@
           <div class="card-body">
             <h5 class="card-title">Free to use</h5>
             <p class="card-text">Everyone can make their own website without paying anything</p>
-            <a href="#" class="btn">Go somewhere</a>
+            <a href="register" class="btn">Register</a>
           </div>
         </div>
       </div>
