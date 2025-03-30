@@ -12,6 +12,7 @@ use Illuminate\Queue\RedisQueue;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 
+
 use function PHPSTORM_META\map;
 
 class TemplateController extends Controller
@@ -45,7 +46,7 @@ class TemplateController extends Controller
 
     
      
-
+        $user = Auth::user();
      
         $html = '<!DOCTYPE html>
                 <html lang="en">
@@ -57,14 +58,23 @@ class TemplateController extends Controller
                     <style>
                     body{
                     background-color: '.($htmlRecord->bgColor).'
-                    
+                    }
+
+                    footer{
+                    background-color: grey;
                     }
                     
                     </style>
                 </head>
                 <body>
                 <h1>' .($htmlRecord->BodyTitle) . '</h1>
-            <div class="description">' .($htmlRecord->description) . '</div>
+                <div class="description">' .($htmlRecord->description) . '</div>
+                <footer>
+                <ul>
+                <li>'. ($user->username).'</li>
+                <li>'. ($user->email).'</li>
+                </ul>
+                </footer>
                 </body>
                 </html>';
 
