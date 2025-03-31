@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->integer('files_generated')->default(0);
-            $table->foreignId('templates_id')->constrained()->default(0);
+            
             $table->rememberToken();
             $table->timestamps();
         });
