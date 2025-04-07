@@ -9,18 +9,22 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Queue\RedisQueue;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 
 
-use function PHPSTORM_META\map;
+
 
 class TemplateController extends Controller
 {
     public function templates()
     {
-        $generatedFiles = session('generated_files', []);
-        return view("templates", compact('generatedFiles'));
+        $genratedFiles = User::withCount(['templates' => function($query) {
+            $query->where('user_id', auth()->id);
+        }])->get();
+        $template = Template::query()->get();
+        return view("templates", compact('generatedFiles', 'template'));
     }
 
     public function templatesForm(){
@@ -47,6 +51,8 @@ class TemplateController extends Controller
     
      
         $user = Auth::user();
+
+        
      
         $html = '<!DOCTYPE html>
                 <html lang="en">
@@ -91,6 +97,8 @@ class TemplateController extends Controller
             'download_link' => $fileUrl,
             'filename' => $filename,
         ]);
+
+        
         
     }
 }

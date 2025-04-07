@@ -49,20 +49,20 @@
           <button type="submit">Logout</button>
       </form><br>
       <h2>Previously Generated HTML Files</h2>
-        @if(count($generatedFiles) > 0)
-            <ul>
-                @foreach($generatedFiles as $file)
-                    <li>
-                        <a href="{{ storage_path('app/users/' . Auth::id() . '/' . $file) }}" download>{{ $file }}</a>
-                    </li>
-                @endforeach
-            </ul>
+        @if($generatedFiles>0)
+            @for ($i = 0; $i < Auth::user()->templates()->count(); $i++)
+                <ul>
+                  <li>
+                    <a href="{{ storage_path('app/users/' . Auth::id() . '/' . $generatedFiles) }}" download>{{ $generatedFiles }}</a>
+                  </li>
+                </ul>
+            @endfor
             <a href="templatesForm" class="btn tbn-primary">Make another website</a>
         @else
             <p>No files generated yet.</p>
             <a href="templatesForm" class="btn tbn-primary">Make your first website</a>
         @endif
-        <p>You have generated {{ Auth::user()->files_generated }} file(s).</p>
+        
     @endauth
 
     @guest

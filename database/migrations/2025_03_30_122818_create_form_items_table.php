@@ -13,12 +13,10 @@ return new class extends Migration
     {
         Schema::create('form_items', function (Blueprint $table) {
             $table->id();
-            $table->string('username');
             $table->integer('form_id');
-            $table->integer('phoneNum');
-            $table->string('text');//ebbe kerülne a problémája a felhasználónak 
+            $table->string('type');
+            $table->string('label');//ebbe kerülne a problémája a felhasználónak 
             $table->string('email')->unique();
-            //$table->foreignId('templates_id')->constrained()->default(0); ??? 
             $table->timestamps();
         });
     }

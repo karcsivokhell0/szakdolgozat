@@ -49,7 +49,7 @@ class UserController extends Controller
             'name' => 'required|string|max:250',
             'email' => 'required|string|email',
             'password' => 'required|string|min:8',
-            'templates_id' =>
+            
         ]);
     
         $user = User::create([

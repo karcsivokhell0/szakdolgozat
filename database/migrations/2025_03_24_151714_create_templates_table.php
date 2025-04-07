@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string("BodyTitle");
             $table->string("description");
             $table->string("bgColor")->default('#ffffff');
-            $table->foreignId('user_id')->constrained()->nullable();
+            
         });
     }
 
