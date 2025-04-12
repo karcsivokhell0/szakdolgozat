@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Template;
 use App\Models\User;
 use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Auth;
@@ -79,47 +80,6 @@ class UserController extends Controller
             ->withSuccess('You have successfully logged in!');
     }
 
-    /*public function generate(Request $request){
-
-        $user = Auth::user();
-
-        $validate = $request->validate([
-            'htitle'=>'required|string|max:25',
-            'btitle'=>'required|string|max:25',
-            'description'=>'required|string|max:150',
-            'bg_color'=>'required|string|size:7'
-        ]);
-
-        $htmlContent = "
-            <!DOCTYPE html>
-            <html lang='en'>
-            <head>
-                <meta charset='UTF-8'>
-                <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-                <title>{$validate['htitle']}</title>
-                <style>
-                    body {
-                        background-color: {$validate['bg_color']}; 
-                    }
-                </style>
-            </head>
-            <body>
-                <h1>{$validate['btitle']}</h1>
-                <p>{$validate['description']}</p>
-            </body>
-            </html>
-        ";
-
-        $filename="website".'html';
-
-        Storage::disk('local')->put($filename, $htmlContent);
 
 
-
-        $generatedFiles = session('generated_files',[]);
-        $generatedFiles[] = $filename;
-        session(['generatedd_files' => $generatedFiles]);
-
-        return redirect()->route('templates')->with('success','You made your html file succesly');
-    }*/
 }

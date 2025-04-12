@@ -31,4 +31,5 @@ Route::group([
    
     Route::get("/templatesForm", "templatesForm")->name('templatesForm');
     Route::post("/generate", "generate")->name('generate');
+    Route::get('/templates', [TemplateController::class, 'listTemplates'])->name('templates.list');
 });

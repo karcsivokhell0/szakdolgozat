@@ -20,7 +20,7 @@ class TemplateController extends Controller
 {
     public function templates()
     {
-        $genratedFiles = User::withCount(['templates' => function($query) {
+        $generatedFiles = User::withCount(['templates' => function($query) {
             $query->where('user_id', auth()->id);
         }])->get();
         $template = Template::query()->get();
@@ -90,15 +90,21 @@ class TemplateController extends Controller
 
 
         $fileUrl = asset('storage/' . $filename);
-
        
         return back()->with([
             'success' => 'HTML file generated successfully!',
             'download_link' => $fileUrl,
             'filename' => $filename,
         ]);
-
         
         
     }
+    public function listTemplates()
+{
+    $templates = Template::orderBy('created_at', 'desc')->get();
+
+    return view('templates', compact('templates'));
+}
+    
+
 }
