@@ -32,11 +32,7 @@ class UserController extends Controller
     {
         return view("about");
     }
-    public function templates()
-    {
-        $generatedFiles = session('generated_files', []);
-        return view("templates", compact('generatedFiles'));
-    }
+    
 
     public function templatesForm(){
         return view("templatesForm");
@@ -76,7 +72,7 @@ class UserController extends Controller
         ]);
         Auth::attempt($credentials);
         $request->session()->regenerate();
-        return redirect()->route('templates')
+        return redirect()->route('loggedIn')
             ->withSuccess('You have successfully logged in!');
     }
 

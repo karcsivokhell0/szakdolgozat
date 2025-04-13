@@ -31,5 +31,12 @@ Route::group([
    
     Route::get("/templatesForm", "templatesForm")->name('templatesForm');
     Route::post("/generate", "generate")->name('generate');
-    Route::get('/templates', [TemplateController::class, 'listTemplates'])->name('templates.list');
+    Route::get('/templates', [TemplateController::class, 'listTemplates'])->name('listTemplates');
+});
+
+Route::group([
+    "controller"=>BaseController::class
+],function(){
+    Route::get("/loggedIn", "loggedIn")->name("loggedIn");
+    Route::get("/admin", "admin")->name("admin");
 });
