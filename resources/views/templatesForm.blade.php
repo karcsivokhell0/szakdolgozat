@@ -62,7 +62,7 @@
                             </div>
                         @endif
 
-                        <form method="POST" action="generate">
+                        <form method="POST" action="{{route('generate')}}">
                             @csrf()
 
                             <div class="mb-3">
@@ -74,14 +74,21 @@
                                 <input type="text" class="form-control" id="BodyTitle" name="BodyTitle" required>
                             </div>
                             <div class="mb-3">
-                                <label for="content" class="form-label">Description</label>
-                                <textarea class="form-control" id="description" name="description" rows="5" required></textarea>
+                                <label for="content" class="form-label">Description 1</label>
+                                <textarea class="form-control" id="BodyDescription" placeholder="Tell us about yourself" name="BodyDescription" rows="5" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                              <label for="content" class="form-label">Description 2</label>
+                              <textarea class="form-control" id="SeconDescription" placeholder="Tell us what are you doing?" name="SeconDescription" rows="5" required></textarea>
                             </div>
                             <div class="mb-3">
                                 <label for="author" class="form-label">Background Color</label>
-                                <input type="text" class="form-control" id="bgColor" name="bgColor">
+                                <input type="color" class="form-control" id="bgColor" name="bgColor">
                             </div>
-
+                            <div class="mb-3">
+                              <label for="title" class="form-label">Image Link</label>
+                              <input type="text" class="form-control" placeholder="Write the link that about you or your company" id="image" name="image" required>
+                            </div>
                             <button type="submit" class="btn btn-primary">Generate Website</button>
                         </form>
                     </div>

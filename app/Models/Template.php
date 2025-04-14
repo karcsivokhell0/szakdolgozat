@@ -11,7 +11,9 @@ class Template extends Model
     protected $fillable =[
         "HeaderTitle",
         "BodyTitle",
-        "description",
+        "BodyDescription",
+        "SeconDescription",
+        "image",
         "bgColor"
     ];
 

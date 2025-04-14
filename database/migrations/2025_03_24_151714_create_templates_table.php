@@ -16,10 +16,10 @@ return new class extends Migration
             $table->timestamps();
             $table->string("HeaderTitle");
             $table->string("BodyTitle");
-            $table->string("description");
+            $table->string("BodyDescription");
+            $table->string("image");
+            $table->string("SeconDescription");
             $table->string("bgColor")->default('#ffffff');
-            
-            
         });
     }
 

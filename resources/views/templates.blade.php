@@ -66,7 +66,7 @@
                         <tr>
                             <td>{{ $template->HeaderTitle }}</td>
                             <td>{{ $template->BodyTitle }}</td>
-                            <td>{{ Str::limit($template->description, 50) }}</td>
+                            <td>{{ Str::limit($template->BodyDescription, 255) }}</td>
                             <td>{{ $template->created_at->format('Y-m-d H:i') }}</td>
                         </tr>
                     @endforeach

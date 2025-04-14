@@ -75,7 +75,4 @@ class UserController extends Controller
         return redirect()->route('loggedIn')
             ->withSuccess('You have successfully logged in!');
     }
-
-
-
 }
