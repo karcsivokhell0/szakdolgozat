@@ -96,4 +96,11 @@ class UserController extends Controller
             "success"=>"Thank you for your message. We will work on the problem"
         ]);
     }
+    public function list()
+    {
+          $users = User::all();
+
+        return view('dashboard', compact('users'));
+    
+    }
 }

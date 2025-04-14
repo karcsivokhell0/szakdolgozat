@@ -44,6 +44,8 @@ Route::group([
     Route::get("/admin", "admin")->name("admin");
 });
 
-Route::middleware('auth')->get('/admin', [UserController::class, 'list'])->name('dashboard');
+Route::get('/admin', [UserController::class, 'list'])->middleware('is_admin')->name('dashboard');
+
+
 
 
