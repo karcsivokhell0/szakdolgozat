@@ -160,7 +160,7 @@ class TemplateController extends Controller
             </div>
         
             <div class="container-fluid text-center doing">
-                <h1 class="col-12">What Im doing?</h1>
+                <h1 class="col-12">What am i doing?</h1>
                 <p class="col-12">'.($htmlRecord->SeconDescription).'.</p>
             </div>
         
