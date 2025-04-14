@@ -22,6 +22,8 @@ Route::group([
         FacadesAuth::logout();  
         return redirect('/home');  
     })->name('logout');
+    Route::get('/contactUs', 'contactUs')->name('contactUs');
+    Route::post('/errors','errors')->name('errors');
 });
 
 

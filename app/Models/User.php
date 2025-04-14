@@ -53,4 +53,8 @@ class User extends Authenticatable
     public function templates():HasMany{
         return $this->hasMany(Template::class,'id');
     }
+
+    public function forms():HasMany{
+        return $this->hasMany(Form_item::class,'id');
+    }
 }

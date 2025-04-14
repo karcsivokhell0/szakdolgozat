@@ -75,3 +75,19 @@ footer{
     bottom: 0;
     width: 100%;
 }
+
+.errors{
+    width: 600px;
+    justify-content: center;
+    padding: 25px;
+}
+
+.errors label{
+    padding: 15px;
+}
+
+.card-header{
+    background-color: #6885EF;
+    font-size: large;
+    font-style: bold;
+}
