@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BaseController;
 use App\Http\Controllers\TemplateController;
@@ -40,3 +41,7 @@ Route::group([
     Route::get("/loggedIn", "loggedIn")->name("loggedIn");
     Route::get("/admin", "admin")->name("admin");
 });
+
+Route::middleware('auth')->get('/admin', [UserController::class, 'list'])->name('dashboard');
+
+

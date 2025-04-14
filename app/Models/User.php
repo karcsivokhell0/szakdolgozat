@@ -53,4 +53,9 @@ class User extends Authenticatable
     public function templates():HasMany{
         return $this->hasMany(Template::class,'id');
     }
+        
+    public function isAdmin(): bool
+    {
+        return (bool) $this->is_admin;
+    }
 }

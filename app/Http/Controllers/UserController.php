@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Middleware\IsAdmin;
 use App\Models\Template;
 use App\Models\User;
 use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 
@@ -62,6 +63,10 @@ class UserController extends Controller
         return redirect()->route("login");
 
     }
+    
+  
+
+   
 
 
     public function authenticate(Request $request): RedirectResponse
@@ -74,5 +79,13 @@ class UserController extends Controller
         $request->session()->regenerate();
         return redirect()->route('loggedIn')
             ->withSuccess('You have successfully logged in!');
+    }
+
+    public function list()
+    {
+          $users = User::all(); // Fetch all users
+
+        return view('dashboard', compact('users'));
+    
     }
 }
