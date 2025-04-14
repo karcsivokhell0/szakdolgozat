@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Middleware\IsAdmin;
+use App\Models\Form_item;
 use App\Models\Template;
 use App\Models\User;
 use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 
@@ -63,10 +63,6 @@ class UserController extends Controller
         return redirect()->route("login");
 
     }
-    
-  
-
-   
 
 
     public function authenticate(Request $request): RedirectResponse
@@ -81,11 +77,23 @@ class UserController extends Controller
             ->withSuccess('You have successfully logged in!');
     }
 
-    public function list()
-    {
-          $users = User::all(); // Fetch all users
+    public function contactUs(){
+        return view('contact');
+    }
 
-        return view('dashboard', compact('users'));
-    
+    public function errors(Request $request){
+        $request->validate([
+            'email' => 'required|string|email',
+            'type' => 'required|string',
+            'error'=> 'required|string|max:250'
+        ]);
+        $exception=Form_item::create([
+            "email"=>$request->email,
+            'type'=>$request->type,
+            'error'=>$request->error
+        ]);
+        return back()->with([
+            "success"=>"Thank you for your message. We will work on the problem"
+        ]);
     }
 }

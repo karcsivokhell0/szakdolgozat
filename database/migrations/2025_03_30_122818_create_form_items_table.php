@@ -13,10 +13,9 @@ return new class extends Migration
     {
         Schema::create('form_items', function (Blueprint $table) {
             $table->id();
-            $table->integer('form_id');
             $table->string('type');
-            $table->string('label');//ebbe kerülne a problémája a felhasználónak 
-            $table->string('email')->unique();
+            $table->string('error');//ebbe kerülne a problémája a felhasználónak 
+            $table->string('email');
             $table->timestamps();
         });
     }

@@ -8,13 +8,13 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Form_item extends Model
 {
     protected $fillable = [
-        'form_id',
+        'email',
         'type',
         'name',
-        'label'
+        'error'
     ];
 
-    public function froms():BelongsTo{
-        return $this->belongsTo(Forms::class);
+    public function users():BelongsTo{
+        return $this->belongsTo(User::class);
     }
 }

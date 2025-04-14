@@ -30,10 +30,13 @@
           <a class="nav-link  text-decoration-unerline" href="about">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="templates">Templates</a>
+          <a class="nav-link active" href="templates">Templates</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="login">Login</a>
+          <a class="nav-link" href="login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactUs">Contact Us</a>
         </li>
       </ul>
     </div>
