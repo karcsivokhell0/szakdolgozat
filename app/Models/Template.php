@@ -14,7 +14,8 @@ class Template extends Model
         "BodyDescription",
         "SeconDescription",
         "image",
-        "bgColor"
+        "bgColor",
+        "user_id"
     ];
 
     public function users():BelongsTo{
