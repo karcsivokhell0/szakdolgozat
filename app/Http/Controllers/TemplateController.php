@@ -43,18 +43,24 @@ class TemplateController extends Controller
             'image'=>'required|string'
         ]);
 
+        $users=Auth::user();
+
+        if(Auth::check()){
+
         $htmlRecord = Template::create([
             'HeaderTitle' => $validated['HeaderTitle'],
             'BodyTitle'=> $validated['BodyTitle'],
             'BodyDescription' => $validated['BodyDescription'],
             'bgColor'=>$validated['bgColor'] ?? '#ffffff',
             'SeconDescription'=>$validated['SeconDescription'],
-            'image'=>$validated['image']
+            'image'=>$validated['image'],
+            'user_id'=>Auth::user()->id
         ]);
+        }
 
     
      
-        $user = Auth::user();
+        
 
         
      
@@ -166,8 +172,8 @@ class TemplateController extends Controller
         
             <footer class="py-3">
                 <ul class="nav justify-content-center pb-3 mb-3">
-                  <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">'.($user->username).'</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">'.($user->email).'</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">'.($users->username).'</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">'.($users->email).'</a></li>
                 </ul>
                 <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
               </footer>
@@ -189,9 +195,16 @@ class TemplateController extends Controller
         
         
     }
-    public function listTemplates()
+    public function listTemplates(Request $request)
 {
-    $templates = Template::orderBy('created_at', 'desc')->get();
+    $templates = Template::query();
+
+    if (Auth::check()) {
+        $templates = $templates
+        ->where("user_id", Auth::user()->id);
+    }
+
+    $templates = $templates->orderBy('created_at', 'desc')->get();
 
     return view('templates', compact('templates'));
 }

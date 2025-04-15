@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'User',
             'username'=>'TestUser',
             'email' => 'test@example.com',
-            'password'=>'asdasdds'
+            'password'=>'testelek'
         ]);
 
         $this->call([

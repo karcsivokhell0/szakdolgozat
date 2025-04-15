@@ -45,12 +45,14 @@
 
 
 @auth
-        <p>Welcome {{ Auth::user()->name }}!</p>
+    <div class="tmLoggedIn">
+      <h1>Welcome {{ Auth::user()->name }}!</h1>
         <p>You are succesfully logged in.</p>
         <form method="POST" action="{{ route('logout') }}">
           @csrf
-          <button type="submit">Logout</button>
-      </form><br>
+          <button class="btn" type="submit">Logout</button>
+        </form>
+      </div><br>
       <h2>Previously Generated HTML Files</h2>
       @if($templates->isEmpty())
             <p>No templates found.</p>
@@ -76,12 +78,15 @@
                 </tbody>
             </table>
         @endif
-        <a href="templatesForm" class="btn tbn-primary">Make your website!</a>
-    </div>
+        <div class="make">
+          <a href="templatesForm" class=" btn makeBtn">Make your website!</a>
+        </div>
     @endauth
 
     @guest
-        <p>You are not logged in. <a href="{{ route('login') }}">Login</a></p>
+        <div class="container notLoggedIn">
+            <h1>You are not logged in.</h1><br> <a href="{{ route('login') }}" class="btn loginBtn">Login</a>
+        </div>
     @endguest
 </body>
 

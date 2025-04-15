@@ -50,7 +50,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Generate Your website</div>
+                    <div class="card-header tmTitle">Generate Your website</div>
 
                     <div class="card-body">
                         @if(session('success'))

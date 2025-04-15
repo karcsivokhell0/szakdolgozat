@@ -71,7 +71,7 @@
         <div class="card-body">
           <h5 class="card-title">Zólyomi Károly</h5>
           <p class="card-text">Project manager</p>
-          <p class="card-text">19 years old, responsible for Front-end and Back-end.</p>
+          <p class="card-text">19 years old, responsible for Frontend and Backend.</p>
         </div>
       </div>
     </div>

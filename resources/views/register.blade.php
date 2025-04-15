@@ -47,30 +47,32 @@
 
 
 <div class="container-fluid justify-content-center ">
-  <form class="container register" method="POST" action="{{ route('store') }}">
-    {{ @csrf_field() }}
-    <h1>Register</h1>
-    <div class="form-group">
-      <input class="form-controll" type="text" name="name" placeholder="Name" required>
-    </div>
-    <div class="form-group">
-
-      <input type="text" name="username" placeholder="Username" required>
-    </div>
-    <div class="form-group">
-
-      <input type="email" name="email" placeholder="Email" required>
-    </div>
-    <div class="form-group">
-
-      <input type="password" name="password" placeholder="Password" required title="8 characters minimum">
-    </div>
-    <div class="row">
-      <div class="from-group">
-        <button class="btn btn-secondary">Register</button>
+  <div class="col-12 col-md-12 col-sm-12">
+    <form class="container register" method="POST" action="{{ route('store') }}">
+      {{ @csrf_field() }}
+      <h1>Register</h1>
+      <div class="form-group">
+        <input class="form-controll" type="text" name="name" placeholder="Name" required>
       </div>
-    </div>
-  </form>
+      <div class="form-group">
+  
+        <input type="text" name="username" placeholder="Username" required>
+      </div>
+      <div class="form-group">
+  
+        <input type="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+  
+        <input type="password" name="password" placeholder="Password" required title="8 characters minimum">
+      </div>
+      <div class="row">
+        <div class="from-group">
+          <button class="btn btn-secondary">Register</button>
+        </div>
+      </div>
+    </form>
+  </div>
 
   <div class="container existingaccount">
     <div class="row">

@@ -55,6 +55,33 @@
         @endforelse
         </tbody>
     </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Type of the error</th>
+                <th>Description</th>
+                <th>Registered</th>
+            </tr>
+        </thead>
+        <tbody>
+        @forelse($form_items as $form_item)
+            <tr>
+                <td>{{ $form_item->id }}</td>
+                <td>{{ $form_item->email }}</td>
+                <td>{{ $form_item->type }}</td>
+                <td>{{ $form_item->error }}</td>
+                <td>{{ $form_item->created_at->format('Y-m-d') }}</td>
+            </tr>
+        @empty
+            <tr>
+                <td colspan="5" style="text-align: center;">No users found.</td>
+            </tr>
+        @endforelse
+        </tbody>
+    </table>
 </div>
 </body>
 </html>

@@ -133,5 +133,44 @@ nav li a:hover{
     transition-duration: 0.5ms;
 }
 
+.tmLoggedIn{
+    text-align: center;
+    padding: 15px;
+}
 
+.tmLoggedIn button{
+    background-color: #6885EF;
+    font-size: 18px;
+}
 
+.tmLoggedIn button:hover{
+    background-color: #476AEC;
+}
+
+.make{
+    justify-content: center;
+    text-align: center;
+}
+
+.makeBtn{
+    background-color: #6885EF;
+    font-size: 18px;
+}
+
+.makeBtn:hover{
+    background-color: #476AEC;
+}
+
+.notLoggedIn{
+    text-align: center;
+    margin-top: 45px;
+}
+
+.loginBtn{
+    background-color: #6885EF;
+    font-size: 18px;
+}
+
+.loginBtn:hover{
+    background-color: #476AEC;
+}

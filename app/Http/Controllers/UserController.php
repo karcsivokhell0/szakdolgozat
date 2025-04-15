@@ -98,9 +98,9 @@ class UserController extends Controller
     }
     public function list()
     {
-          $users = User::all();
-
-        return view('dashboard', compact('users'));
+        $users = User::all();
+        $form_items = Form_item::all();
+        return view('dashboard', compact(['users','form_items']));
     
     }
 }

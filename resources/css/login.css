@@ -6,6 +6,7 @@
 
 html,body{
     height: 100dvh;
+    width: auto;
 }
 
 nav{
@@ -28,18 +29,15 @@ nav li a:hover{
     transition-duration: 0.5ms;
 }
 .login{
-    width: 500px;
-    margin: 15px;
-    height: auto;
+    width: 350px;
     background-color: #6885EF;
     font-size: 20px;
     padding-top: 45px;
     padding-bottom: 45px;
-    padding-right: 10;
+    padding-right: 20;
     text-align: center;
     justify-content: center;
     border-radius: 10px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
 }
